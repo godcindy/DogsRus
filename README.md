@@ -1,2 +1,2 @@
-# DogsRus.html
+# DogsRus
 Dog Purchasing Site
