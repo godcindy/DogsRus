@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dog.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>DogsRus Webpage</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/basket.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Ready to welcome your newest family member?</h1>
+                    <p>Opening your home to your newest family member is the most personal choice. We know this can be
+                        a hard choice and sometimes knowing a little more background information on the breed is more
+                        imnportant than just being cute (because really, what dog isn't cute?).
+                        <br> Let us be the first to support you in this important decision.
+                    </p>
+                    </p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/dogtravel.jpeg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ----- Featured Categories--- -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ----- Featured Products--- -->
+    <div class="small-container">
+        <h2 class="title">Featured Family Member</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg">
+                <h4>
+                    <center>Schnoodle</center>
+                </h4>
+                <p>
+                    <center>$1000</center>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---FACTS----- -->
+    <div class="facts">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/facts.jpg" class="facts-img">
+                </div>
+                <div class="col-2">
+                    <p> Sniff out all the facts!</p>
+                    <h1>Dog Info</h1>
+                    <small>Check out some interesting facts about different breeds</small>
+                    <a href="" class="btn">I want to know! &#8594</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---Footer--- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our newsleter</h3>
+                    <p> download the android</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Privacy Policy</h3>
+                    <p> Read</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Suggestion</h3>
+                    <p> download the android</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023</p>
+        </div>
+    </div>
+
+    <!-- js for toggle menu
+    <script>
+        const menuItems = document.getElementById("menuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
