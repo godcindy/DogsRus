@@ -21,3 +21,7 @@ Account: This will allow the user to create an account to log in in the future o
 Cart: Currently this is hardcoded for what the appearance of the page will be when a dog is added for purchase.
 
 Media Screen is also available when the user is not on a desktop and all of the same capabilities are available.
+
+
+
+You can access the site here: http://127.0.0.1:5500/DogsRus/index.html

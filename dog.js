@@ -1,18 +1,22 @@
-// const btn = document.getElementById("btn");
+const btn = document.getElementById("btn");
 
+function fetchDogFact() {
 
-// fetch("https://dogapi.dog/api/v2/facts")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     const fact = data[0].fact;
-//     btn.textContent = fact;
-//   })
-//   .catch((error) => {
-//     console.error(error);
-//     btn.textContent = "An error occurred while fetching dog facts.";
-//   });
-
-
+fetch("https://dogapi.dog/api/v2/facts")
+  .then((response) => response.json())
+  .then((data) => {
+   for (const fact of data) {
+    const factElement = document.createElement("p");
+    factElement.textContent = fact.fact;
+    factsContainer.appendChild(factElement);
+   }
+  })
+  .catch((error) => {
+    console.error(error);
+    btn.textContent = "An error occurred.";
+  });
+}
+btn.addEventListener("click", fetchDogFact);
 
 
 
