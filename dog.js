@@ -1,13 +1,13 @@
-// fetch("https://dog.ceo/api/breeds/list/all")
-//     .then(function (response) {
-//         return response.json();
-//     })
-//     .then(function (data) {
-//         console.log(data);
-//     })
-//     .catch(function (error) {
-//         console.error(error);
-//     });
+fetch("https://dogapi.dog/api/v2/facts")
+.then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+  })
+  .catch(function(error){
+    console.log(error);
+});
 
 // <!-- js for toggle menu -->
 
