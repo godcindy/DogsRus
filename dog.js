@@ -1,13 +1,38 @@
-fetch("https://dogapi.dog/api/v2/facts")
-.then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    console.log(data);
-  })
-  .catch(function(error){
-    console.log(error);
-});
+// const btn = document.getElementById("btn");
+
+
+// fetch("https://dogapi.dog/api/v2/facts")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     const fact = data[0].fact;
+//     btn.textContent = fact;
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//     btn.textContent = "An error occurred while fetching dog facts.";
+//   });
+
+
+
+
+
+// // calling/fetching my dog facts api 
+// fetch("https://dogapi.dog/api/v2/facts")
+
+// // this tells it next steps. tellling it to pull response from the api and then parse out the info from response. my second then processes the data that was parsed out and console logs. The catch handles any errors that occur during the request or teh processing of the data. the error will be pulled and console logged if it exists.
+// .then(function(response) {
+//     return response.json();
+//   })
+//   .then(function(data) {
+//     console.log(data);
+//   })
+//   .catch(function(error){
+//     console.log(error);
+// });
+
+
+
+
 
 // <!-- js for toggle menu -->
 

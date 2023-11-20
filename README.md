@@ -19,3 +19,5 @@ Contact: This will contain a link in order for the user to reach out to DogsRUs.
 Account: This will allow the user to create an account to log in in the future or to log in if they are already a member.  This page also has a feature that allows the user to choose between Login and Register and depending on what they choose it will provide the user with the correct form.
 
 Cart: Currently this is hardcoded for what the appearance of the page will be when a dog is added for purchase.
+
+Media Screen is also available when the user is not on a desktop and all of the same capabilities are available.
