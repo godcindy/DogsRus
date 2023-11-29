@@ -101,8 +101,8 @@
 
                     <div class="dogFactContainer">
                         <div class="quote">
-                            <button onclick="" div class="btn">Fetch Fact!</div>
-                            <!-- <button onclick="getFact()" type="button" class="btn">Fetch Fact!</a> -->
+                            <button onclick="getData()" div class="btn">Fetch Fact!</button>  
+                        <div class="fact-container"></div>  
                         </div>
                        
                     </div>
@@ -151,37 +151,24 @@
         //     }
         // }
 
-        // const quote = document.getElementById('quote');
-
-        // function getFact() {
-        //     console.log('clicked')
-        // }
-
-        // quote.addEventListener('click', getFact)
-
-        // const square = document.createElement('quote')
-
-        // const body = document.querySelector('body')
-
-        // console.log(square);
-
-        // body.appendChild(square);
+   
 
 
-        const quotedisplay = document.querySelector('.quote')
-        const btn = document.querySelector('.btn')
+        const quotedisplay = document.querySelector('.fact-container');
+        const btn = document.querySelector('.btn');
         
         function getData() {
         
-            fetch('https://dogapi.dog/api/v2/facts')
+            fetch('https://dogapi.dog/api/v1/facts')
                 .then((response) => response.json())
                 .then((data) => {
-                    console.log(data)
         
-                    const fact = data
-                    console.log(fact)
-                    quotedisplay.innerHTML = fact
-        
+                    const fact = data.facts[0];
+                    
+                    quotedisplay.innerHTML = `<p>${fact}</p>`;
+                })
+                .catch(error => {
+                    console.error('Error fetching data', error);
                 })
         
         }
