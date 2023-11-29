@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/DogsRus/dog.js" defer></script>
+    <script src="/DogsRus/dog.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap"
         rel="stylesheet">
@@ -35,13 +35,13 @@
             <div class="row">
                 <div class="col-2">
                     <h1>Ready to welcome your newest family member?</h1>
-                    <p>Opening your home to your newest family member is the most personal choice. We know this can be
-                        a hard choice and sometimes knowing a little more background information on the breed is more
+                    <p>Opening your home to your newest family member is the most personal choice. We know this can be a
+                        hard choice and sometimes knowing a little more background information on the breed is more
                         imnportant than just being cute (because really, what dog isn't cute?).
-                        <br> Let us be the first to support you in this important decision.
+                        Let us be the first to support you in this important decision.
                     </p>
                     </p>
-                    
+
                     <a href="" class="btn">Explore Now &#8594;</a>
                 </div>
                 <div class="col-2">
@@ -98,9 +98,17 @@
                     <p> Sniff out all the facts!</p>
                     <h1>Dog Info</h1>
                     <small>Check out some interesting facts about different breeds</small>
-             
-                    <a href="" class="btn" onclick="fetchDogFact()">I want to know! &#8594</a>
-                    
+
+                    <div class="dogFactContainer">
+                        <div class="quote">
+                            <button onclick="" div class="btn">Fetch Fact!</div>
+                            <!-- <button onclick="getFact()" type="button" class="btn">Fetch Fact!</a> -->
+                        </div>
+                       
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
@@ -112,7 +120,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Download our newsleter</h3>
+                    <h3>Download our newsletter</h3>
                     <p> Stay Up To Date</p>
                 </div>
                 <div class="footer-col-2">
@@ -128,6 +136,61 @@
             <p class="copyright">Copyright 2023</p>
         </div>
     </div>
+
+    <script>
+        //     const menuItems = document.getElementById("menuItems");
+
+        // MenuItems.style.maxHeight = "0px";
+
+        // function menuToggle() {
+        //     if (menuItems.style.maxHeight == "0px") {
+        //         MenuItems.style.maxHeight = "200px";
+        //     }
+        //     else {
+        //         menuItems.style.maxHeight = "0px";
+        //     }
+        // }
+
+        // const quote = document.getElementById('quote');
+
+        // function getFact() {
+        //     console.log('clicked')
+        // }
+
+        // quote.addEventListener('click', getFact)
+
+        // const square = document.createElement('quote')
+
+        // const body = document.querySelector('body')
+
+        // console.log(square);
+
+        // body.appendChild(square);
+
+
+        const quotedisplay = document.querySelector('.quote')
+        const btn = document.querySelector('.btn')
+        
+        function getData() {
+        
+            fetch('https://dogapi.dog/api/v2/facts')
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data)
+        
+                    const fact = data
+                    console.log(fact)
+                    quotedisplay.innerHTML = fact
+        
+                })
+        
+        }
+        document.addEventListener('click', getData)
+
+
+  </script> 
+
+
 
 </body>
 
